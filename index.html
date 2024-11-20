@@ -1,0 +1,58 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Coin Master</title>
+    
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <style type="text/css">
+        body{
+            margin: 0;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var config = {
+            type: Phaser.AUTO,
+            with: 500,
+            height:576,
+            scene:{
+                preload: preload,
+                create: create,
+                update: update
+        
+            },
+            
+            physics:{
+            default: 'arcade',
+            arcade:{
+                gravity: {y: 300},
+                debug :false
+                }
+            },
+            
+        };
+
+        var game = new Phaser.Game(config);
+
+        function preload ()
+        {
+           
+        }
+        function create ()
+        {
+
+        }
+        function update(){
+
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    
+    <script src="./dist/js/lib/phaser.min.js"></script>
+    <script type="module" src="dist/js/main.js"></script>
+</body>
+</html>
